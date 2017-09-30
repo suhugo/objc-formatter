@@ -1,9 +1,23 @@
 # Objc Formatter
-A script for formatting the Objective-C codes in XCode
+A simple way for formatting the Objective-C codes in XCode
 
 ## Prerequisites
 
-Install uncrustify
+>Install uncrustify
+
+```shell
+brew install uncrustify
+```
+
+>Config uncrustify
+
+Download [uncrustify_obj_c.txt](uncrustify_obj_c.txt)
+
+```shell
+mv uncrustify_obj_c.txt ~/.uncrustify_obj_c.cfg
+```
+
+Or you can use your own config file.
 
 ## How to use it
 
@@ -35,6 +49,7 @@ Change the path to your objc code's folder
 
 If you have another objc code's folder to format, just call another format_dir().
 
+e.g.
 ![](demo.png)
 
 Now build your project, and the objc codes will be auto formatted.
